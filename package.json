@@ -1,0 +1,23 @@
+{
+  "name": "your-movie-streams-addon",
+  "version": "1.0.0",
+  "description": "Stremio addon for streaming movies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "stremio",
+    "addon",
+    "movies",
+    "streams"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "stremio-addon-sdk": "^1.6.0"
+  }
+}
