@@ -22,7 +22,8 @@ const manifest = {
             { name: 'genre' },
             { name: 'skip' },
             { name: 'search' }
-        ]
+        ],
+        extraSupported: ['search'] // Added extraSupported property
     }]
 };
 
