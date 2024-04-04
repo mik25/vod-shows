@@ -73,15 +73,7 @@ builder.defineCatalogHandler(args => {
             );
         }
 
-        const page = args.extra && args.extra.page ? parseInt(args.extra.page, 10) : 1;
-        const itemsPerPage = 50;
-
-        const startIndex = (page - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-
-        const paginatedMetas = metas.slice(startIndex, endIndex);
-
-        return Promise.resolve({ metas: paginatedMetas });
+        return Promise.resolve({ metas });
     } else {
         return Promise.resolve({ metas: [] });
     }
